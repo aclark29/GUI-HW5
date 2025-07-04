@@ -1,0 +1,112 @@
+/* Andrew Clark
+   7/4/25 
+   CSS for entire project, handles a lot of the alignment of tiles within
+   their divs, which are specifically located on top of images
+*/
+
+body {
+    background-color:aquamarine;
+}
+
+.tile {
+    width: 50px;
+    height: 50px;
+    display: block;
+    cursor: grab;
+}
+
+.tileSlot {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 15px;
+  border: 2px dashed transparent;
+}
+
+#rackContainer {
+  position: relative;
+  width: 400px;
+  height: 80px;
+  margin: 40px auto;
+}
+
+#tileRack {
+  width: 100%;     /* Scales to container width */
+  max-width: 400px; /* Limits max size */
+  height: auto;
+  display: block;
+}
+
+.tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Or 'cover' if you prefer */
+}
+
+#ts0 { left: 10px; }
+#ts1 { left: 65px; }
+#ts2 { left: 120px; }
+#ts3 { left: 175px; }
+#ts4 { left: 230px; }
+#ts5 { left: 285px; }
+#ts6 { left: 340px; }
+
+#lineContainer {
+  position: relative;
+  width: 1129px; /* size of board line image */
+  height: 80px;
+  margin: 40px auto;
+}
+
+#boardLineImg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.boardSlot {
+  position: absolute;
+  width: 50px;     /* width of each tile square */
+  height: 50px;
+  top: 0;
+}
+
+#lineImg {
+    margin: auto;
+}
+
+button {
+    display: inline;
+}
+
+#scoreDisplay {
+    margin: 40px auto;
+    font-family: Georgia;
+    font-size: 24px;
+    font-weight: bolder;
+    margin-bottom: 0px;
+}
+
+#wordDisplay {
+    margin: 40px auto;
+    font-family: Georgia;
+    font-size: 24px;
+    font-weight: bolder;
+    margin-top: 0px;
+}
+
+#totalScore {
+    margin: 40px auto;
+    font-family: Georgia;
+    font-size: 24px;
+    font-weight: bolder;
+    margin-top: 0px;
+}
+
+#tilesRemaining {
+    margin: 40px auto;
+    font-family: Georgia;
+    font-size: 24px;
+    font-weight: bolder;
+    margin-bottom: 0px;
+}

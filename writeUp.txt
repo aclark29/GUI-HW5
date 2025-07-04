@@ -1,0 +1,25 @@
+git pages URL: https://aclark29.github.io/GUI-hw5/
+git repository: https://github.com/aclark29/GUI-HW5/
+
+features: 
+-tiles can be dragged and dropped from the board to the rack
+-tiles without neighbors (other than first tile) will bounce back to rack
+-tiles placed outside of board will bounce back to rack
+-tiles can't be moved once placed
+
+-score calculated in real time, word displayed in real time
+-score calculation includes bonus tiles (double letter and double word)
+-tally of total score and remaining tiles kept, updated when word is submitted
+with submit button
+
+-restart button to restart the game
+
+-tile rack populates with random letters according to scrabble letter
+distribution
+
+-rack refills to 7 after a word is submitted
+
+issues:
+-does not use dictionary to validate words
+-letters can be placed on top of each other (although it very clearly
+did not say that was incorrect in the rubric...)

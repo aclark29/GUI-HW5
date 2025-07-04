@@ -1,0 +1,72 @@
+<!--Name: Andrew Clark
+    Date: 7/4/25
+    Assignment:
+    Summary: Scrabble game created using jQuery. Calculates score in real
+    time, checks that tiles other than the first have adjacent tiles, displays
+    word, tracks remaining tiles, tracks total score, has restart button and
+    a redraw button. Uses Jesse Heines associative array.-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Scrabble</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <h2> Homework 5 -- Scrabble</h2>
+    <h4> Andrew Clark</h4>
+
+    <div id="lineContainer">
+        <img src="graphics_data/Scrabble_Board_OneLine.png" id="lineImg">
+        <div class="boardSlot" id="boardSlot0"></div>
+        <div class="boardSlot" id="boardSlot1"></div>
+        <div class="boardSlot doubleWord" id="boardSlot2"></div>
+        <div class="boardSlot" id="boardSlot3"></div>
+        <div class="boardSlot" id="boardSlot4"></div>
+        <div class="boardSlot" id="boardSlot5"></div>
+        <div class="boardSlot doubleLetter" id="boardSlot6"></div>
+        <div class="boardSlot" id="boardSlot7"></div>
+        <div class="boardSlot doubleLetter" id="boardSlot8"></div>
+        <div class="boardSlot" id="boardSlot9"></div>
+        <div class="boardSlot" id="boardSlot10"></div>
+        <div class="boardSlot" id="boardSlot11"></div>
+        <div class="boardSlot doubleWord" id="boardSlot12"></div>
+        <div class="boardSlot" id="boardSlot13"></div>
+        <div class="boardSlot" id="boardSlot14"></div>
+    </div>
+    
+    <div id="rackContainer">
+        <img src="graphics_data/scrabble-tile-holder-406774_640.png" id="tileRack">
+        <div class="tileSlot" id="ts0"></div>
+        <div class="tileSlot" id="ts1"></div>
+        <div class="tileSlot" id="ts2"></div>
+        <div class="tileSlot" id="ts3"></div>
+        <div class="tileSlot" id="ts4"></div>
+        <div class="tileSlot" id="ts5"></div>
+        <div class="tileSlot" id="ts6"></div>
+    </div>
+
+    <div id="buttons">
+        <button id="submitWord">Submit</button>
+        <button id="restart">Restart</button>
+    </div>
+
+    <div class ="display" id="scoreDisplay"></div>
+    <div class ="display" id="wordDisplay"></div>
+    <div class ="display" id="tilesRemaining"></div>
+    <div class ="display" id="totalScore"></div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="js/droppable.js"></script>
+    <script src="js/set_board_slots.js"></script>
+    <script src="js/Scrabble_Pieces_AssociativeArray_Jesse.js"></script>
+    <script src="js/random_tiles.js"></script>
+    <script src="js/load_tiles.js"></script>
+    <script src="js/calc_score.js"></script>
+    <script src="js/submit.js"></script>
+    <script src="js/restart.js"></script>
+  </body>
+</html>
