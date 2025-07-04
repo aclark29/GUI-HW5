@@ -32,3 +32,5 @@ function loadTiles() {
         });
     };
 }
+
+loadTiles();
